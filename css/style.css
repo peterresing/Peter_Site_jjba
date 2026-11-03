@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap');
 
 :root {
-  --primaria: #235852;
-  --primaria-hover: #1a433e;
-  --fundo-da-secao-meio: #F4F5F4;
-  --fundo-cards-secao-hero: #FFFFFF;
+  --primaria: #451052;
+  --primaria-hover: #220929;
+  --fundo-da-secao-meio: #b556ec;
+  --fundo-cards-secao-hero: #ffffff;
   --fundo-placeholder: #E1E7E5;
-  --fundo-rodape: #1D2220;
-  --texto-principal: #1C1F1E;
+  --fundo-rodape: #1b031d;
+  --texto-principal: #1d1c1f;
   --texto-secundario: #5E6562;
 }
 
@@ -57,8 +58,8 @@ a:focus-visible {
   font-weight: 600;
 }
 
-#imglogo{
-  width: 35px;
+.imglogo{
+  width: 50px;
   height: auto;
   padding-right: 10px
 }
@@ -283,6 +284,7 @@ a:focus-visible {
     padding: 72px 24px;
     background-color: var(--fundo-cards-secao-hero);
     margin: 10px;
+    border-radius: 10px;
 }
 
 .hero span {
@@ -402,13 +404,7 @@ a:focus-visible {
     background-color: #ffffff;
     padding: 30px 30px;
     border-radius: 10px;
-    cursor: pointer;
     flex-direction: column;
-    transition: transform ease-in-out 0.2s;
-}
-
-.card:hover{
-    transform: scale(1.05);
 }
 
 .card h3 {
@@ -426,7 +422,19 @@ a:focus-visible {
 }
 
 .card h2 {
+    display: flex;
+    justify-content: center;
     font-size: 18px;
+    font-weight: 700;
+    background-color: var(--fundo-rodape);
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform ease-in-out 0.2s;
+}
+
+.card h2:hover {
+  transform: scale(1.05);
 }
 
 .imgcard {
@@ -540,3 +548,7 @@ a:focus-visible {
     margin-right: 50px;
   }
 
+.textofd {
+  font-family: "Honk";
+  font-size: 30px;
+}
