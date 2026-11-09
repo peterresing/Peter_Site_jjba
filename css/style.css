@@ -426,7 +426,7 @@ a:focus-visible {
     justify-content: center;
     font-size: 18px;
     font-weight: 700;
-    background-color: var(--fundo-rodape);
+    background-color: #dab1dd;
     width: 100px;
     border-radius: 5px;
     cursor: pointer;
